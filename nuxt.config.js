@@ -2,17 +2,12 @@
 export default {
   mode: 'universal',
   /*
-  ** HTML lang attribute
-  */
-  metaInfo: {
-    htmlAttrs: {
-      lang: 'en'
-    }
-  },
-  /*
   ** Headers of the page
   */
   head: {
+    htmlAttrs: {
+      lang: 'en'
+    },
     title: 'VIP Aesthetic Medicine' || process.env.npm_package_name,
     meta: [
       { charset: 'utf-8' },
@@ -21,7 +16,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel:"stylesheet", href:"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity:"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", crossorigin:"anonymous" }
+      { rel:"stylesheet", href:"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity:"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", crossorigin:"anonymous" },
+      { rel:"stylesheet", href:"https://fonts.googleapis.com/icon?family=Material+Icons" }
     ],
     script: [
       { src:"https://code.jquery.com/jquery-3.2.1.slim.min.js", integrity:"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin:"anonymous" },
