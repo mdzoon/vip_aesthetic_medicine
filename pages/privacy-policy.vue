@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container content-wrapper">
         <h1>Privacy Policy</h1>
         <h3>What Personal Data We Collect And Why We Collect It</h3>
         <p>We may collect and process the following data about you:</p>

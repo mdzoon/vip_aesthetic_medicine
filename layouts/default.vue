@@ -1,14 +1,12 @@
 <template>
   <div>
-    <div class="container-fluid bg-light header-wrapper">
-      <TheHeader />
-    </div>
-    <div class="content-wrapper">
-      <nuxt />
-    </div>
-    <div class="container-fluid bg-light footer-wrapper">
-      <TheFooter />
-    </div>
+    
+    <TheHeader />
+
+    <nuxt />
+
+    <TheFooter />
+
   </div>
 </template>
 

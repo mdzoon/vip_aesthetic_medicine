@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container content-wrapper">
         <h1>Cookies Policy</h1>
         <p>Like almost all websites, our website uses cookies, to help provide you with the best experience we can. Cookies are small text files that are placed on your computer or mobile phone when you browse websites.</p>
         <p>This Cookies Policy explains the cookies we use and the purpose for which we use them for our website located at <a href="/">www.vipaestheticmedicine.co.uk</a> and its associated domains (collectively the “Site”).</p>

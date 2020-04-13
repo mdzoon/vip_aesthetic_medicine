@@ -1,0 +1,63 @@
+body {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: normal;
+    color: $font-colour;
+    background-color: $background-colour;
+}
+
+a {
+    color: $colour-primary;
+    transition: $transition;
+    &:hover, &:active, &:focus {
+        text-decoration: none;
+    }
+}
+
+*:focus {
+    outline: none;
+}
+
+.header-wrapper {
+    a {
+        color: $font-colour;
+        &:hover, &:active, &:focus {
+            color: $colour-primary;
+        }
+    }
+}
+
+.content-wrapper {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    h1 {
+        margin-bottom: 3rem;
+    }
+    h3 {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.footer-wrapper {
+    background-color: $background-colour-contrast;
+    color: $font-colour-contrast;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    a {
+        color: $font-colour-contrast;
+        &:hover, &:active, &:focus {
+            color: $colour-primary;
+        }
+    }
+    .contact-wrapper {
+        margin-bottom: 5rem;
+    }
+    hr {
+        border-color: $font-colour-contrast;
+    }
+    .copywright-wrapper {
+        margin-top: 3rem;
+        font-size: small;
+    }
+}

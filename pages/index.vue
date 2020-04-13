@@ -1,9 +1,15 @@
 <template>
-  <div class="container">
-    <div>
-      <div class="hero-banner">
-        <img class="img-fluid" src="~assets/images/hero.webp" alt="VIP Aesthetic Medicine Hero Image">
+  <div>
+
+    <div class="container-fluid hero-banner">
+      <div class="container">
+        <a class="cta-container" href="#">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Book Your Consultation</button>
+        </a>
       </div>
+    </div>
+    
+    <div class="container content-wrapper">
       <h1 class="title">
         vip_aesthetic_medicine
       </h1>
@@ -12,11 +18,11 @@
       </h2>
       <p>This is the first page</p>
     </div>
+
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
@@ -24,6 +30,16 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+.hero-banner {
+  background: url("~assets/images/hero.webp") no-repeat center center;
+  background-size: cover;
+  height: 480px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+}
 </style>
