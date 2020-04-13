@@ -2,6 +2,14 @@
 export default {
   mode: 'universal',
   /*
+  ** HTML lang attribute
+  */
+  metaInfo: {
+    htmlAttrs: {
+      lang: 'en'
+    }
+  },
+  /*
   ** Headers of the page
   */
   head: {
@@ -44,13 +52,11 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-  /*
-    ** Nuxt.js modules
-    */
+    '@nuxtjs/style-resources'
   ],
   styleResources: {
     scss: [
-      '~assets/scss/_variables.scss' // use underscore "_" & also file extension ".scss"
+      'assets/scss/_variables.scss'
     ]
   },
   /*
