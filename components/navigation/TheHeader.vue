@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid header-wrapper">
+    <div class="container-fluid header-wrapper sticky-top">
         <div class="row">
             <div class="container">
                 <nav class="navbar navbar-expand-md">
@@ -8,14 +8,14 @@
                             <div class="burger-lines"></div>
                         </div>
                     </button>
-                    <a class="navbar-brand mr-0 mr-lg-3" href="/">
+                    <a class="navbar-brand mr-0 mr-lg-3" href="/" > 
                         <div class="logo-container">
                             <img class="d-none d-sm-block" src="~assets/images/vipaesmed-logo.svg" />
                             <span>VIP Aesthetic Medicine</span>
                         </div>        
                     </a>
 
-                    <div class="collapse navbar-collapse" id="navbar-menu">
+                    <div id="navbar-menu" class="collapse navbar-collapse">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="/about-us">About Us</a>
@@ -60,7 +60,9 @@ export default {
             isOpen: false
         }
     },
-    methods: {}
+    methods: {
+                
+    }
 }
 </script>
 
@@ -79,6 +81,7 @@ export default {
         background-color: $background-colour;
     }
 }
+
 .logo-container {
     display: flex;
     justify-content: space-between;
@@ -87,6 +90,7 @@ export default {
         height: 5rem;
     }
 }
+
 .dropdown-menu {
     border: none;
     background-color: inherit;

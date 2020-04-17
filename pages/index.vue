@@ -4,7 +4,7 @@
     <div class="container-fluid hero-banner">
       <div class="container">
         <a class="cta-container" href="#">
-          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Book Your Consultation</button>
+          <button class="btn btn-danger my-2 my-sm-0" type="submit">Book Your Consultation</button>
         </a>
       </div>
     </div>
@@ -40,6 +40,12 @@ export default {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    .btn-danger {
+      background-color: $colour-primary;
+        &:hover, &:active, &:focus {
+          background-color: red;
+      }
+    }
   }
 }
 </style>
