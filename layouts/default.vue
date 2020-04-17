@@ -23,8 +23,5 @@ export default {
 </script>
 
 <style lang="scss">
-.logo-icon {
-  height: $icon-height;
-}
 
 </style>
