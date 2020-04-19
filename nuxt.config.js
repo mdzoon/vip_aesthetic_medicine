@@ -1,4 +1,3 @@
-
 export default {
   mode: 'universal',
   /*
@@ -16,7 +15,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/vipaesmed-favicon.ico' },
-      { rel: 'stylesheet', type : 'text/css', href : 'assets/fonts/fonts.css' },
       { rel:'stylesheet', href:'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity:'sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin:'anonymous' },
       { rel:'stylesheet', href:'https://fonts.googleapis.com/icon?family=Material+Icons' }
     ],
@@ -34,6 +32,7 @@ export default {
   ** Global CSS
   */
   css: [
+    'assets/fonts/fonts.css',
   ],
   /*
   ** Plugins to load before mounting the App
@@ -54,7 +53,6 @@ export default {
   styleResources: {
     scss: [
       'assets/scss/_variables.scss',
-      'assets/scss/_globals.scss',
       'assets/scss/_burger.scss'
     ]
   },

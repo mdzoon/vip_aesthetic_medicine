@@ -1,17 +1,35 @@
 $colour-primary: #e12a22;
-$colour-faint-grey: #ccc;
+$colour-primary-darker: #ca241c;
+$colour-background: #fff;
+$colour-background-darker: #ccc;
+$colour-background-contrast: #252525;
+$colour-background-primary-faint: #f8e1e0;
 
 $font-colour: #252525;
+$font-colour-primary-faint: #f0948f;
 $font-colour-contrast: #fff;
 
-$background-colour: #fff;
-$background-colour-contrast: #252525;
+$font-family-main: 'ITC Avant Garde Std Bk', sans-serif;
+$font-family-accent: 'Helvetica', sans-serif;
+$font-family-light: 'ITC Avant Garde Std XLt', sans-serif;
+$font-weight-main: 300;
+$font-weight-accent: bold;
+$font-weight-light: 300;
 
-$font-family: 'ITC Avant Garde Std Bk', sans-serif;
-$font-weight: 300;
 
 $border-radius: 5px;
 
 $transition: all .5s;
 
 $icon-height: 2rem;
+
+@mixin flex-elm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin gutter_size {
+    width: 1rem;
+    height: 1rem;
+}

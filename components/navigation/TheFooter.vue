@@ -65,8 +65,7 @@ export default {
     align-items: center;
     .logo-icon {
         max-height: 5rem;
-        background-color: $background-colour;
-        border-radius: $border-radius;
+        background-color: $colour-background; 
     }
 }
 

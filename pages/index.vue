@@ -4,7 +4,11 @@
     <div class="container-fluid hero-banner">
       <div class="container">
         <a class="cta-container" href="#">
-          <button class="btn btn-danger my-2 my-sm-0" type="submit">Book Your Consultation</button>
+          <button class="btn btn-danger my-2 my-sm-0" type="submit">
+            <i class="material-icons md-18">event_available</i>
+            <div class="gutter"></div>
+            Book Your Consultation
+          </button>
         </a>
       </div>
     </div>
@@ -23,7 +27,6 @@
 </template>
 
 <script>
-
 export default {
   components: {
   }
@@ -43,7 +46,7 @@ export default {
     .btn-danger {
       background-color: $colour-primary;
         &:hover, &:active, &:focus {
-          background-color: red;
+          background-color: $colour-primary-darker;
       }
     }
   }
