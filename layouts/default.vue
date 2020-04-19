@@ -60,6 +60,10 @@ a {
     border-radius: unset;
     padding: .75rem 1.25rem;
     @include flex-elm;
+    font-family: $font-family-accent;
+}
+.btn-danger {
+    font-size: 20px;
 }
 
 .header-wrapper {
@@ -83,7 +87,8 @@ a {
     margin-top: 5rem;
     margin-bottom: 5rem;
     h1 {
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
+        letter-spacing: 10px;
     }
     h3 {
         margin-top: 3rem;

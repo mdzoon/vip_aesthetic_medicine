@@ -10,7 +10,7 @@
                     </button>
                     <a class="navbar-brand mr-0 mr-lg-3" href="/" > 
                         <div class="logo-container">
-                            <img class="d-none d-sm-block" src="~assets/images/vipaesmed-logo.svg" />
+                            <img class="d-none d-lg-block" src="~assets/images/vipaesmed-logo.svg" alt="VIP Aesthetic Medicine Logo"/>
                             <span>VIP Aesthetic Medicine</span>
                         </div>        
                     </a>
@@ -72,11 +72,19 @@ export default {
     align-items: center;
     img {
         height: 5rem;
+        margin-bottom: 15px;
+    }
+    span {
+        font-size: 2rem;
+    }
+    @media only screen and (max-width: 992px) {
+        span {
+            font-size: 1.5rem;
+        }
     }
 }
 
-.dropdown-menu {
-    border: none;
-    background-color: inherit;
+#navbar-menu a {
+    padding: 1rem;
 }
 </style>
