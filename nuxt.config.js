@@ -48,7 +48,8 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    'vue-scrollto/nuxt'
   ],
   styleResources: {
     scss: [

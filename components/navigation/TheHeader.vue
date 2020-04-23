@@ -18,10 +18,10 @@
                     <div id="navbar-menu" class="collapse navbar-collapse">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="/about-us">About Us</a>
+                                <a class="nav-link" href="/treatments">Treatments</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/treatments">Treatments</a>
+                                <a class="nav-link" href="/about-us">About Us</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/contact">Contact</a>
@@ -80,6 +80,11 @@ export default {
     @media only screen and (max-width: 992px) {
         span {
             font-size: 1.5rem;
+        }
+    }
+    @media only screen and (max-width: 400px) {
+        span {
+            font-size: 1.2rem;
         }
     }
 }

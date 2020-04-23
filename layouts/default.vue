@@ -3,6 +3,8 @@
     
     <TheHeader />
 
+    <ScrollTo />
+
     <nuxt />
 
     <TheFooter />
@@ -12,11 +14,13 @@
 
 <script>
 import TheHeader from '@/components/navigation/TheHeader.vue'
+import ScrollTo from '@/components/utilities/ScrollTo.vue'
 import TheFooter from '@/components/navigation/TheFooter.vue'
 
 export default {
   components: {
       TheHeader,
+      ScrollTo,
       TheFooter
   }
 }
@@ -38,6 +42,7 @@ h1 {
     letter-spacing: 0px;
     text-transform: uppercase;
     color: $font-colour-primary-faint;
+    overflow-wrap: break-word;
 }
 
 a {
