@@ -7,6 +7,8 @@
 
     <nuxt />
 
+    <CookiesBar />
+
     <TheFooter />
 
   </div>
@@ -15,12 +17,14 @@
 <script>
 import TheHeader from '@/components/navigation/TheHeader.vue'
 import ScrollTo from '@/components/utilities/ScrollTo.vue'
+import CookiesBar from '@/components/utilities/CookiesBar.vue'
 import TheFooter from '@/components/navigation/TheFooter.vue'
 
 export default {
   components: {
       TheHeader,
       ScrollTo,
+      CookiesBar,
       TheFooter
   }
 }
