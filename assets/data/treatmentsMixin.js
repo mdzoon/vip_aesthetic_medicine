@@ -2,13 +2,15 @@ export default {
     data () {
         return {
             treatments: [
-                {
+                {   
+                    id: 'DF',
                     name: 'Dermal Filler',
                     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed pellentesque nisl. Donec laoreet fringilla maximus. Donec felis nisl, consequat ut pharetra nec, accumsan sed lacus. Donec vehicula urna sit amet nisi dapibus, id placerat massa scelerisque. Donec sed sagittis metus. Vestibulum eget pharetra elit, vel iaculis arcu. Maecenas egestas sagittis suscipit. Pellentesque quam nibh, egestas ut congue in, facilisis et nisl. Suspendisse facilisis dolor eu lorem tristique, eu rhoncus enim congue. Fusce vel commodo eros. Etiam lacinia purus sed justo suscipit tincidunt. Aenean lacus nunc, tristique ac nulla et.',
                     image: 'dermal-filler-sample.jpg',
                     background: 'custom-background-1.svg'
                 },
-                {
+                {   
+                    id: 'AI',
                     name: 'Antiwrinkle Injections',
                     description: 'Botulinum toxin type A products are prescription only medicines which work by temporarily blocking the release of a chemical substance called acetylcholine, which transmits information to the muscle causing it to contract and tighten. The role of the antiwrinkle product is to keep the muscle in a relaxed state by partially inactivating it so that the skin will not be tightened and pulled which causes the wrinkling. This will keep the skin looking smoother giving you the appearance of looking more refreshed and youthful. The procedure is quick, relatively pain free and little downtime. Top up is usually required between 3 and 5 months. However, over time and by having repeated treatments the muscle activity is weakened and the results can last a lot longer.',
                     areas: [
