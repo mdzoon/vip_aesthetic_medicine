@@ -6,8 +6,8 @@
             <div class="col-md-6 image-wrapper">
                 <img :src="require(`@/assets/images/${treatment.image}`)" class="img-fluid" :alt="treatment.image | imageAlt" />
             </div>
-            <div class="col-md-6 accordion-wrapper">
-                <div>{{treatment.description}}</div>
+            <div class="col-md-6 description-wrapper">
+                <div class="description-container">{{treatment.description}}</div>
                 <treatmentAccordion :treatment="treatment" />
                 <button class="btn btn-danger my-2 my-sm-0" type="submit">
                     <i class="material-icons md-24">event_available</i>
@@ -54,10 +54,14 @@ export default {
         font-style: normal;
         letter-spacing: 10px;
     }
-    .accordion-wrapper {
+    .description-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        .description-container {
+            font-size: smaller;
+            text-align: justify;
+        }
     }
 }
 </style>
