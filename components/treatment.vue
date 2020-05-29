@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import treatmentAccordion from '@/components/treatmentAccordion.vue'
+import treatmentAccordion from '@/components/segments/treatmentAccordion.vue'
 
 export default {
     components: {
