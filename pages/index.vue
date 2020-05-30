@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <div class="container-fluid hero-banner">
+    <aside class="container-fluid hero-banner">
       <div class="container">
         <a class="cta-container" href="#">
           <button class="btn btn-danger my-2 my-sm-0" type="submit">
@@ -11,15 +11,26 @@
           </button>
         </a>
       </div>
-    </div>
+    </aside>
     
-    <div class="container content-wrapper">
+    <main class="container content-wrapper">
+      <h1 class="title">Welcome to VIP AESTHETIC MEDICINE</h1>
       <section id="about-us">
-        <h1 class="title">Welcome to VIP AESTHETIC MEDICINE</h1>
         <h2 class="subtitle">
           About Us
         </h2>
-        <p>VIP AESTHETIC MEDICINE is both Nurse & Beauty Therapist-led private aesthetic medicine practice 2 minutes’ drive from the Royal Bolton Hospital which offers minimally invasive non-surgical procedures as well as non-invasive cosmetic and beauty treatments to help people restore a revitalized and healthy appearance and enhance their self-confidence. We pride ourselves in using the latest technology and scientific innovation available to help you get the results you deserve without having to endure extensive pain or the risks of general anesthesia, scalpels, sutures, or scars. We believe in applying all technology available to yield the greatest results with minimizing risk to all clients.</p>
+        <div class="section-text">VIP AESTHETIC MEDICINE is both Nurse & Beauty Therapist-led private aesthetic medicine practice 2 minutes’ drive from the Royal Bolton Hospital which offers minimally invasive non-surgical procedures as well as non-invasive cosmetic and beauty treatments to help people restore a revitalized and healthy appearance and enhance their self-confidence. We pride ourselves in using the latest technology and scientific innovation available to help you get the results you deserve without having to endure extensive pain or the risks of general anesthesia, scalpels, sutures, or scars. We believe in applying all technology available to yield the greatest results with minimizing risk to all clients.</div>
+        <div class="section-text">What makes us different from our competitors:
+          <p>Real passion and interest in Aesthetic Medicine. We are very passionate about helping people look their best and feel great.</p>
+          <p>Application of the Science of Beauty which is a concept that has been developed xyxyyxyxyxyyxy…....</p>
+          <p>We are strong believers in compassion, equality and assistance to those in need! Therefore, we help people who would benefit from aesthetic treatments but cannot afford them by offering significant discounts:</p>
+          <ul>
+            <li>Unemployed jobseekers – proof of Job seeker allowance benefit required</li>
+            <li>Full-time parents – proof of tax credit benefits required</li>
+            <li>Students – enrolment or acceptance letter from an educational institution or NUS card required</li>
+            <li>Retired – proof of pension receipt required</li>
+          </ul>
+        </div>
       </section>
       <section id="contact">
         <h2 class="subtitle">
@@ -27,7 +38,7 @@
         </h2>
         <p>Contact details</p>
       </section>
-    </div>
+    </main>
 
   </div>
 </template>
@@ -55,6 +66,14 @@ export default {
           background-color: $colour-primary-darker;
       }
     }
+  }
+}
+section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  .section-text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 </style>
