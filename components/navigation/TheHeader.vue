@@ -8,26 +8,26 @@
                             <div class="burger-lines"></div>
                         </div>
                     </button>
-                    <a class="navbar-brand mr-0 mr-lg-3" href="/" > 
+                    <nuxt-link class="navbar-brand mr-0 mr-lg-3" to="/" > 
                         <div class="logo-container">
                             <img class="d-none d-lg-block" src="~assets/images/vipaesmed-logo.svg" alt="VIP Aesthetic Medicine Logo"/>
                             <span>VIP Aesthetic Medicine</span>
                         </div>        
-                    </a>
+                    </nuxt-link>
 
                     <div id="navbar-menu" class="collapse navbar-collapse">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="/treatments">Treatments</a>
+                                <nuxt-link class="nav-link" to="/treatments">Treatments</nuxt-link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/about-us">About Us</a>
+                                <nuxt-link class="nav-link" :to="{ path: '/',hash:'#about-us'}">About Us</nuxt-link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/contact">Contact</a>
+                                <nuxt-link class="nav-link" to="/#contact">Contact</nuxt-link>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                                <nuxt-link class="nav-link" to="/">Home <span class="sr-only">(current)</span></nuxt-link>
                             </li>
                         </ul>
                     </div>

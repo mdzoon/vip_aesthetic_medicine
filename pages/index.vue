@@ -14,11 +14,19 @@
     </div>
     
     <div class="container content-wrapper">
-      <h1 class="title">Welcome to VIP AESTHETIC MEDICINE</h1>
-      <h2 class="subtitle">
-        client_portfolio
-      </h2>
-      <p>VIP AESTHETIC MEDICINE is both Nurse & Beauty Therapist-led private aesthetic medicine practice 2 minutes’ drive from the Royal Bolton Hospital which offers minimally invasive non-surgical procedures as well as non-invasive cosmetic and beauty treatments to help people restore a revitalized and healthy appearance and enhance their self-confidence. We pride ourselves in using the latest technology and scientific innovation available to help you get the results you deserve without having to endure extensive pain or the risks of general anesthesia, scalpels, sutures, or scars. We believe in applying all technology available to yield the greatest results with minimizing risk to all clients.</p>
+      <section id="about-us">
+        <h1 class="title">Welcome to VIP AESTHETIC MEDICINE</h1>
+        <h2 class="subtitle">
+          About Us
+        </h2>
+        <p>VIP AESTHETIC MEDICINE is both Nurse & Beauty Therapist-led private aesthetic medicine practice 2 minutes’ drive from the Royal Bolton Hospital which offers minimally invasive non-surgical procedures as well as non-invasive cosmetic and beauty treatments to help people restore a revitalized and healthy appearance and enhance their self-confidence. We pride ourselves in using the latest technology and scientific innovation available to help you get the results you deserve without having to endure extensive pain or the risks of general anesthesia, scalpels, sutures, or scars. We believe in applying all technology available to yield the greatest results with minimizing risk to all clients.</p>
+      </section>
+      <section id="contact">
+        <h2 class="subtitle">
+          Contact
+        </h2>
+        <p>Contact details</p>
+      </section>
     </div>
 
   </div>
