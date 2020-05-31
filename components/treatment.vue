@@ -1,5 +1,5 @@
 <template>
-    <div class="treatment-wrapper">
+    <article class="treatment-wrapper">
         <img :src="require(`@/assets/images/${treatment.background}`)" class="custom-background" :alt="treatment.background | imageAlt" />
         <h3>{{treatment.name}}</h3>
         <div class="row">
@@ -7,8 +7,29 @@
                 <img :src="require(`@/assets/images/${treatment.image}`)" class="img-fluid" :alt="treatment.image | imageAlt" />
             </div>
             <div class="col-md-6 description-wrapper">
-                <div class="description-container">{{treatment.description}}</div>
-                <treatmentAccordion :treatment="treatment" />
+                <div class="short-description-container">                    
+                    {{treatment.shortDescription}}
+                </div>
+                <div class="treatment-detail-container">
+                    <i class="material-icons">
+                        info
+                    </i>                    
+                    Learn more about
+                </div>                
+                <div class="treatment-detail-container">
+                    <i class="material-icons">
+                        assignment
+                    </i>                    
+                    Pretreatment Documents: {{treatment.pretreatmentDocuments}} 
+                    <span><i>fill in now</i></span>
+                </div>
+                <div class="treatment-detail-container">
+                    <i class="material-icons">
+                        av_timer
+                    </i>                    
+                    Treatment Time: {{treatment.treatmentTime}}
+                </div>
+                <!-- <treatmentAccordion :treatment="treatment" /> -->
                 <button class="btn btn-danger my-2 my-sm-0" type="submit">
                     <i class="material-icons md-24">event_available</i>
                     <div class="gutter"></div>
@@ -16,15 +37,15 @@
                 </button>
             </div>
         </div>
-    </div>
+    </article>
 </template>
 
 <script>
-import treatmentAccordion from '@/components/segments/treatmentAccordion.vue'
+// import treatmentAccordion from '@/components/segments/treatmentAccordion.vue'
 
 export default {
     components: {
-        treatmentAccordion
+        // treatmentAccordion
     },
     props: {
         treatment: Object
@@ -58,9 +79,21 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        .description-container {
-            font-size: smaller;
+        .short-description-container {
             text-align: justify;
+            margin-bottom: 1rem;
+        }
+        .treatment-detail-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: .75rem 1.25rem;
+            i {
+                margin-right: 1rem;
+            }
+        }
+        button {
+            justify-content: flex-start;
         }
     }
 }

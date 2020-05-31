@@ -12,6 +12,9 @@ export default {
                 {   
                     id: 'ai',
                     name: 'Antiwrinkle Injections',
+                    shortDescription: 'Restore the youthful look of your face and hands. Add the lost volume to your lips, eliminate wrinkles, and smooth deep-set lines around your mouth, eyes, nose and forehead.',
+                    pretreatmentDocuments: '',
+                    treatmentTime: '45 mins',
                     description: 'Botulinum toxin type A products are prescription only medicines which work by temporarily blocking the release of a chemical substance called acetylcholine, which transmits information to the muscle causing it to contract and tighten. The role of the antiwrinkle product is to keep the muscle in a relaxed state by partially inactivating it so that the skin will not be tightened and pulled which causes the wrinkling. This will keep the skin looking smoother giving you the appearance of looking more refreshed and youthful. The procedure is quick, relatively pain free and little downtime. Top up is usually required between 3 and 5 months. However, over time and by having repeated treatments the muscle activity is weakened and the results can last a lot longer.',
                     areas: [
                         'Frown Lines between the eyebrows (glabella)',
