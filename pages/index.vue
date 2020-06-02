@@ -4,11 +4,7 @@
     <aside class="container-fluid hero-banner">
       <div class="container">
         <a class="cta-container" href="#">
-          <button class="btn btn-danger my-2 my-sm-0" type="submit">
-            <i class="material-icons md-18">event_available</i>
-            <div class="gutter"></div>
-            Book Your Consultation
-          </button>
+          <BookingButton />
         </a>
       </div>
     </aside>
@@ -44,8 +40,11 @@
 </template>
 
 <script>
+import BookingButton from '@/components/utilities/BookingButton.vue'
+
 export default {
   components: {
+    BookingButton
   }
 }
 </script>

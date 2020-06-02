@@ -11,30 +11,26 @@
                     {{treatment.shortDescription}}
                 </div>
                 <div class="treatment-detail-container">
-                    <i class="material-icons">
+                    <i class="material-icons-outlined">
                         info
                     </i>                    
                     Learn more about
                 </div>                
                 <div class="treatment-detail-container">
-                    <i class="material-icons">
+                    <i class="material-icons-outlined">
                         assignment
                     </i>                    
                     Pretreatment Documents: {{treatment.pretreatmentDocuments}} 
                     <span><i>fill in now</i></span>
                 </div>
                 <div class="treatment-detail-container">
-                    <i class="material-icons">
+                    <i class="material-icons-outlined">
                         av_timer
                     </i>                    
                     Treatment Time: {{treatment.treatmentTime}}
                 </div>
+                <BookingButton />
                 <!-- <treatmentAccordion :treatment="treatment" /> -->
-                <button class="btn btn-danger my-2 my-sm-0" type="submit">
-                    <i class="material-icons md-24">event_available</i>
-                    <div class="gutter"></div>
-                    Book Your Consultation
-                </button>
             </div>
         </div>
     </article>
@@ -42,10 +38,11 @@
 
 <script>
 // import treatmentAccordion from '@/components/segments/treatmentAccordion.vue'
+import BookingButton from '@/components/utilities/BookingButton.vue'
 
 export default {
     components: {
-        // treatmentAccordion
+        BookingButton
     },
     props: {
         treatment: Object
