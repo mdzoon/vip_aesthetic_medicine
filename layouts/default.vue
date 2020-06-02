@@ -37,6 +37,7 @@ body {
     font-style: normal;
     color: $font-colour;
     background-color: $colour-background;
+    font-size: 1.25rem;
 }
 
 h1 {
@@ -70,9 +71,6 @@ a {
     padding: .75rem 1.25rem;
     @include flex-elm;
     font-family: $font-family-accent;
-}
-.btn-danger {
-    font-size: 20px;
 }
 
 .header-wrapper {
@@ -124,7 +122,7 @@ a {
     }
     .copywright-wrapper {
         margin-top: 3rem;
-        font-size: small;
+        // font-size: small;
     }
 }
 

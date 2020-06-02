@@ -10,7 +10,7 @@
             }"
             :class="{ 'return-top--hidden': hideScrollTo }"
         >
-            <i class="material-icons md-36">expand_less</i>
+            <i class="material-icons-outlined md-36">expand_less</i>
         </a>
     </div>
 </template>

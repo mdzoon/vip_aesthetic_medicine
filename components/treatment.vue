@@ -85,6 +85,8 @@ export default {
             justify-content: flex-start;
             align-items: center;
             padding: .75rem 1.25rem;
+            font-family: $font-family-accent;
+            font-size: 1rem;
             i {
                 margin-right: 1rem;
             }
