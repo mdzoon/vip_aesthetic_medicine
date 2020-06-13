@@ -9,13 +9,18 @@
 <style lang="scss">
 .cookieControl {
     .cookieControl__Bar {
-        border-radius: $border-radius;
-        background-color: rgba(0, 0, 0, .75);
+        background-color: rgba(0, 0, 0, .7);
         -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
         box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
         @media only screen and (max-width: 767px) {
             border-radius: unset;
-        } 
+        }
+        h3 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: .75rem;
+        }
     }
     .cookieControl__BarButtons,
     .cookieControl__ModalButtons {
@@ -28,6 +33,8 @@
         }
     }
     button {
+        padding: .5rem;
+        font-size: .75rem;
         min-width: 10rem;
         &:hover, &:active, &:focus {
             background-color: $colour-primary-darker;
