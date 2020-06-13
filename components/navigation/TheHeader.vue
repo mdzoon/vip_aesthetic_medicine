@@ -4,7 +4,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-md">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
-                        <div class="navbar-toggler-icon burger burger-squeeze" :class="{ open: isOpen }" @click="isOpen = !isOpen">
+                        <div id="burgerButton" class="navbar-toggler-icon burger burger-squeeze" :class="{ open: isOpen }" @click="isOpen = !isOpen">
                             <div class="burger-lines"></div>
                         </div>
                     </button>
@@ -17,17 +17,37 @@
 
                     <div id="navbar-menu" class="collapse navbar-collapse">
                         <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <nuxt-link class="nav-link" to="/treatments">Treatments</nuxt-link>
+                            <li class="nav-item" @click="isOpen = !isOpen">
+                                <nuxt-link
+                                    to="/treatments"
+                                    class="nav-link"
+                                    data-toggle="collapse"
+                                    data-target=".navbar-collapse.show"
+                                >Treatments</nuxt-link>
                             </li>
-                            <li class="nav-item">
-                                <nuxt-link class="nav-link" :to="{ path: '/',hash:'#about-us'}">About Us</nuxt-link>
+                            <li class="nav-item" @click="isOpen = !isOpen">
+                                <nuxt-link
+                                    :to="{ path: '/',hash:'#about-us'}"
+                                    class="nav-link"
+                                    data-toggle="collapse"
+                                    data-target=".navbar-collapse.show"  
+                                    >About Us</nuxt-link>
                             </li>
-                            <li class="nav-item">
-                                <nuxt-link class="nav-link" to="/#contact">Contact</nuxt-link>
+                            <li class="nav-item" @click="isOpen = !isOpen">
+                                <nuxt-link
+                                    to="/#contact"
+                                    class="nav-link"
+                                    data-toggle="collapse"
+                                    data-target=".navbar-collapse.show"                                    
+                                >Contact</nuxt-link>
                             </li>
-                            <li class="nav-item active">
-                                <nuxt-link class="nav-link" to="/">Home <span class="sr-only">(current)</span></nuxt-link>
+                            <li class="nav-item active" @click="isOpen = !isOpen">
+                                <nuxt-link
+                                    to="/"
+                                    class="nav-link"
+                                    data-toggle="collapse"
+                                    data-target=".navbar-collapse.show"                                    
+                                >Home <span class="sr-only">(current)</span></nuxt-link>
                             </li>
                         </ul>
                     </div>
