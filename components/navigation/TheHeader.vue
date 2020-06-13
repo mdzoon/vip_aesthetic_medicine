@@ -9,14 +9,14 @@
                         </div>
                     </button>
                     <nuxt-link class="navbar-brand mr-0 mr-lg-3" to="/" > 
-                        <div class="logo-container">
+                        <div id="logo-container">
                             <img class="d-none d-lg-block" src="~assets/images/vipaesmed-logo.svg" alt="VIP Aesthetic Medicine Logo"/>
                             <span>VIP Aesthetic Medicine</span>
                         </div>        
                     </nuxt-link>
 
                     <div id="navbar-menu" class="collapse navbar-collapse">
-                        <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav">
                             <li class="nav-item">
                                 <nuxt-link class="nav-link" to="/treatments">Treatments</nuxt-link>
                             </li>
@@ -44,8 +44,20 @@ export default {
             isOpen: false
         }
     },
+    mounted() {
+        window.addEventListener("scroll", this.onScroll)
+    },
+    beforeDestroy() {
+        window.removeEventListener("scroll", this.onScroll)
+    },
     methods: {
-                
+        onScroll(e) {
+            if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+                document.getElementById("logo-container").classList.add("shrink");
+            } else {
+                document.getElementById("logo-container").classList.remove("shrink");
+            }
+        }
     }
 }
 </script>
@@ -60,26 +72,42 @@ export default {
         width: 50px;
         padding: 0.25rem;
         border: none;
+        &:hover,
+        &:focus {
+            outline-color: $font-colour-contrast;   
+        }
     }
-    .nav-item{
-        background-color: $colour-background;
+    .navbar-nav {
+        margin-left: auto;
+        @media only screen and (max-width: 767px) {
+            min-height: 60vh;
+            justify-content: center;      
+        }
+        .nav-item{
+            background-color: $colour-background;
+            min-height: unset !important;
+        }        
+        a {
+            padding: .75rem;
+        }
     }
 }
 
-.logo-container {
+#logo-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     img {
         height: 5rem;
-        margin-bottom: 15px;
+        transition: $transition;
     }
     span {
         font-size: 2rem;
+        transition: $transition;
     }
     @media only screen and (max-width: 992px) {
         span {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
         }
     }
     @media only screen and (max-width: 400px) {
@@ -88,8 +116,14 @@ export default {
         }
     }
 }
-
-#navbar-menu a {
-    padding: 1rem;
+@media only screen and (min-width: 768px) {
+    #logo-container.shrink {
+        img {
+            height: 2rem !important;
+        }
+        span {
+            font-size: 1.25rem;
+        }
+    }
 }
 </style>
