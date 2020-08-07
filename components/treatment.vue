@@ -30,19 +30,28 @@
                     Treatment Time: {{treatment.treatmentTime}}
                 </div>
                 <BookingButton />
-                <!-- <treatmentAccordion :treatment="treatment" /> -->
             </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <!-- <TreatmentAccordion :treatment="treatment" />  -->
+                <BookingButton />
+            </div>
+            <div class="col-md-6">
+                <!-- {{treatment.treatmentDetails.description}} -->
+            </div>            
         </div>
     </article>
 </template>
 
 <script>
-// import treatmentAccordion from '@/components/segments/treatmentAccordion.vue'
+import TreatmentAccordion from '@/components/utilities/TreatmentAccordion.vue'
 import BookingButton from '@/components/utilities/BookingButton.vue'
 
 export default {
     components: {
-        BookingButton
+        BookingButton,
+        TreatmentAccordion
     },
     props: {
         treatment: Object
