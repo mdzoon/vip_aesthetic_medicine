@@ -3,55 +3,55 @@
         <img :src="require(`@/assets/images/${treatment.background}`)" class="custom-background" :alt="treatment.background | imageAlt" />
         <h3>{{treatment.name}}</h3>
         <div class="row">
-            <div class="col-md-6 image-wrapper">
-                <img :src="require(`@/assets/images/${treatment.image}`)" class="img-fluid" :alt="treatment.image | imageAlt" />
+            <div class="col-md-6 image-column">
+                <div class="image-wrapper">
+                    <img :src="require(`@/assets/images/${treatment.image}`)" class="img-fluid" :alt="treatment.image | imageAlt" />
+                </div>
             </div>
-            <div class="col-md-6 description-wrapper">
+            <div class="col-md-6 description-column">
                 <div class="short-description-container">                    
                     {{treatment.shortDescription}}
                 </div>
                 <div class="treatment-detail-container">
-                    <i class="material-icons-outlined">
-                        info
-                    </i>                    
-                    Learn more about
-                </div>                
-                <div class="treatment-detail-container">
-                    <i class="material-icons-outlined">
-                        assignment
-                    </i>                    
-                    Pretreatment Documents: {{treatment.pretreatmentDocuments}} 
-                    <span><i>fill in now</i></span>
+                    <div class="treatment-detail-header">
+                        <i class="material-icons-outlined">info</i>                    
+                        Learn more about
+                    </div>
                 </div>
-                <div class="treatment-detail-container">
-                    <i class="material-icons-outlined">
-                        av_timer
-                    </i>                    
-                    Treatment Time: {{treatment.treatmentTime}}
+                <div class="treatment-detail-container">                
+                    <div class="treatment-detail-header">
+                        <i class="material-icons-outlined">assignment</i>                    
+                        Pretreatment Documents:
+                    </div>
+                    <div class="treatment-detail-body">
+                        <ul>
+                            <li v-for="(pretreatmentDocument, index) in treatment.pretreatmentDocuments" :key="index">
+                                {{pretreatmentDocument}}
+                                <a href="#"><i>fill in the form now</i></a>
+                            </li>                            
+                        </ul>                          
+                    </div>
+                </div>
+                <div class="treatment-detail-container">              
+                    <div class="treatment-detail-header">
+                        <i class="material-icons-outlined">av_timer</i>                    
+                        Treatment Time: {{treatment.treatmentTime}}
+                    </div>
                 </div>
                 <BookingButton />
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <!-- <TreatmentAccordion :treatment="treatment" />  -->
-                <BookingButton />
-            </div>
-            <div class="col-md-6">
-                <!-- {{treatment.treatmentDetails.description}} -->
-            </div>            
         </div>
     </article>
 </template>
 
 <script>
-import TreatmentAccordion from '@/components/utilities/TreatmentAccordion.vue'
+// import TreatmentAccordion from '@/components/utilities/TreatmentAccordion.vue'
 import BookingButton from '@/components/utilities/BookingButton.vue'
 
 export default {
     components: {
         BookingButton,
-        TreatmentAccordion
+        // TreatmentAccordion
     },
     props: {
         treatment: Object
@@ -81,7 +81,16 @@ export default {
         font-style: normal;
         letter-spacing: 10px;
     }
-    .description-wrapper {
+    .image-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image-wrapper {
+            padding: 1rem;
+            border: 1px solid $colour-background-darker;
+        }
+    }
+    .description-column {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -90,14 +99,25 @@ export default {
             margin-bottom: 1rem;
         }
         .treatment-detail-container {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: .75rem 1.25rem;
             font-family: $font-family-accent;
             font-size: 1rem;
             i {
                 margin-right: 1rem;
+            }
+            .treatment-detail-header {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: .75rem 1.25rem;
+
+            }
+            .treatment-detail-body ul {
+                margin-left: 4rem;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
             }
         }
         button {

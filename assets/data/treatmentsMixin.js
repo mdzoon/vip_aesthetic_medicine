@@ -8,6 +8,10 @@ export default {
                     shortDescription: 'Restore the youthful look of your face and hands. Add the lost volume to your lips, eliminate wrinkles, and smooth deep-set lines around your mouth, eyes, nose and forehead.',
                     image: 'dermal-filler-sample.jpg',
                     background: 'custom-background-1.svg',
+                    pretreatmentDocuments: [
+                        'Health Assessment',
+                    ],
+                    treatmentTime: '1h',
                     treatmentDetails:
                     {
                         description: 'Hyaluronic Acid based dermal filler has become the most commonly used type of filler. Hyaluronic acid is a naturally occurring molecule that is found in our skin and other body tissues but its quantity decreases with age. It is a moisture-binding ingredient that keeps our skin hydrated and youthful. HA filler is a sterile gel like substance injected beneath the surface of the skin, to fill lines and wrinkles and to add fullness to areas which lost volume due to ageing.',
