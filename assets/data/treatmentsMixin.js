@@ -4,56 +4,104 @@ export default {
             treatments: [
                 {   
                     id: 'df',
-                    name: 'Dermal Filler',
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed pellentesque nisl. Donec laoreet fringilla maximus. Donec felis nisl, consequat ut pharetra nec, accumsan sed lacus. Donec vehicula urna sit amet nisi dapibus, id placerat massa scelerisque. Donec sed sagittis metus. Vestibulum eget pharetra elit, vel iaculis arcu. Maecenas egestas sagittis suscipit. Pellentesque quam nibh, egestas ut congue in, facilisis et nisl. Suspendisse facilisis dolor eu lorem tristique, eu rhoncus enim congue. Fusce vel commodo eros. Etiam lacinia purus sed justo suscipit tincidunt. Aenean lacus nunc, tristique ac nulla et.',
+                    name: 'Dermal fillers - Face',
+                    shortDescription: 'Restore the youthful look of your face and hands. Add the lost volume to your lips, eliminate wrinkles, and smooth deep-set lines around your mouth, eyes, nose and forehead.',
                     image: 'dermal-filler-sample.jpg',
-                    background: 'custom-background-1.svg'
+                    background: 'custom-background-1.svg',
+                    treatmentDetails:
+                    {
+                        description: 'Hyaluronic Acid based dermal filler has become the most commonly used type of filler. Hyaluronic acid is a naturally occurring molecule that is found in our skin and other body tissues but its quantity decreases with age. It is a moisture-binding ingredient that keeps our skin hydrated and youthful. HA filler is a sterile gel like substance injected beneath the surface of the skin, to fill lines and wrinkles and to add fullness to areas which lost volume due to ageing.',
+                        treatment_benefits: 'HA fillers are popular and versatile anti-ageing injectable treatment that plumps, volumizes and lifts the skin leaving it smooth, contoured and youthful.',
+                        areas_treated: 'Lips, nasolabial fold (smile lines), marionette lines, cheek, jawline, chin, smoker’s lines around lips, tear through & mid-face area, nose.',
+                        products_used: 'Temporary soft tissue dermal fillers such as Juvaderm, Restylane, Revolax and other Hyaluronic Acid based fillers depending on the area. Skin disinfection - ????',
+                        procedure: [
+                            'Full medical and facial assessment.',
+                            'Pre-photos and/or videos taken of the treatment area.',
+                            'Skin disinfected and treatment area marked with a marking pencil.',
+                            'Disposable sterile needles and/or blunt cannula used to inject into the area and gently massaged.',
+                            'Post- photos and/or videos taken of the treatment area.',
+                            'Aftercare advice given.'
+                        ],
+                        contraindications: '',
+                        before_treatment_advice: 'To help avoid bruising it is advisable not to take aspirin or anti-inflammatory medicines (unless being prescribed by a doctor) for one week prior to injection.',
+                        after_treatment_advice: [
+                            {
+                                first_6_hours: [
+                                    'Do not touch the area',
+                                    'Do not apply make up',
+                                    'Do not massage the area'
+                                ]
+                            },
+                            {
+                                first_2_days: [
+                                    'Do not rub or massage the treated area and gently pat skin dry with a soft towel after washing.',
+                                    'Do not sleep directly onto the treated area'
+                                ]
+                            },
+                            {
+                                first_2_weeks: [
+                                    'Avoid strong sunlight, sunbeds, any other exposure to UV, saunas or steam rooms.',
+                                    'Avoid extreme cold; this includes ice packs that are directly applied to the skin.',
+                                    'If you experience any lumpiness in the treated area it can be gently massaged to help smooth this out.',
+                                    'Avoid any facial massages or skin resurfacing until the area has healed fully. It takes about 2 weeks for hyaluronic acid based dermal fillers to integrate fully within the skin.'
+                                ]
+                            }
+                        ],
+                        side_effects: 'Most side effects are associated with the injection (redness, stinging sensation, sensitivity to touch, swelling, rarely bruising) and will be very short lived and temporary.',
+                        recommended_frequency: 'How long they last depend on the type of filler, facial area and individual metabolism. A top up treatment to maintain results is usually required between 4 to 9 months.',
+                        price: 'Starting from £130 per 1ml depending on the brand and type of a filler.'
+                    }
                 },
                 {   
-                    id: 'ai',
-                    name: 'Antiwrinkle Injections',
-                    shortDescription: 'Restore the youthful look of your face and hands. Add the lost volume to your lips, eliminate wrinkles, and smooth deep-set lines around your mouth, eyes, nose and forehead.',
-                    pretreatmentDocuments: '',
-                    treatmentTime: '45 mins',
+                    id: 'nla',
+                    name: 'Non-surgical lip augmentation (dermal fillers)',
+                    shortDescription: '',
                     image: 'anti-wrinkle-treatment.jpg',
                     background: 'custom-background-2.svg',
                     treatmentDetails: 
                     {
-                        description: 'Botulinum toxin type A products are prescription only medicines which work by temporarily blocking the release of a chemical substance called acetylcholine, which transmits information to the muscle causing it to contract and tighten. The role of the antiwrinkle product is to keep the muscle in a relaxed state by partially inactivating it so that the skin will not be tightened and pulled which causes the wrinkling. This will keep the skin looking smoother giving you the appearance of looking more refreshed and youthful. The procedure is quick, relatively pain free and little downtime. Top up is usually required between 3 and 5 months. However, over time and by having repeated treatments the muscle activity is weakened and the results can last a lot longer.',
-                        areas: [
-                            'Frown Lines between the eyebrows (glabella)',
-                            'Lines around the eyes (crow’s feet)',
-                            'Forehead lines (horizontal lines)',
-                            'Bunny lines (side of the nose)',
-                            'Treating the areas listed above will help prevent dynamic winkles caused by over activity of muscles.'
+                        description: '',
+                        treatment_benefits: '',
+                        areas_treated: 'Top and bottom lip.',
+                        products_used: 'Temporary soft tissue dermal fillers such as Juvaderm, Restylane, Revolax and other Hyaluronic Acid based fillers depending on the area. Skin disinfectant immediately prior and during the treatment.',
+                        procedure: [
+                            'Full medical and facial assessment.',
+                            'Pre-photos and/or videos taken of the treatment area.',
+                            'Skin disinfected and treatment area marked with a marking pencil.',
+                            'Disposable sterile needles and/or blunt cannula used to inject into the area and gently massaged.',
+                            'Post- photos and/or videos taken of the treatment area.',
+                            'Aftercare advice given.'
                         ],
-                        contraindications: [
-                            'Preganancy and breastfeeding',
-                            'Under 18 years of age',
-                            'Over 65 years of age',
-                            'Allergy or hypersensitivity to botulinum toxin type A or any other ingredients in the product',
-                            'Myasthenia gravis or Eaton Lambet Syndrome (chronic diseases affecting the muscles)',
-                            'Infection at the proposed injection sites',
-                            'History of dysphagia (difficulty swallowing) or impaired swallowing',
-                            'Medications such as aminoglycoside antibiotics, spectinomycin or other medicines that interfere with neuromuscular transmission'
+                        contraindications: '',
+                        before_treatment_advice: 'To help avoid bruising it is advisable not to take aspirin or anti-inflammatory medicines (unless being prescribed by a doctor) for one week prior to injection. If you have had cold sores in the past, any facial injections may become a trigger and you may get them again post treatment. Coles sores do not normally affect the treatment results if you get them post treatment even if they appear directly on the treatment area.',
+                        after_treatment_advice: [
+                            {
+                                first_6_hours: [
+                                    'Do not touch the area',
+                                    'Do not apply make up',
+                                    'Do not massage the area',
+                                    'Do not drink hot liquids as the temperature of the mug may cause increased breakdown of the filler in your lips. For this reason do not smoke too as dermal fillers are heat-sensitive post injection.',
+                                    'Do not drink anything that is very cold too unless your sensation after numbing cream has returned to normal.',
+                                    'Be careful while the sensation after numbing cream has not returned to normal so that you do not bite your lip when you eat.'
+                                ]
+                            },
+                            {
+                                first_2_days: [
+                                    'Do not rub or massage the treated area and gently pat skin dry with a soft towel after washing'
+                                ]
+                            },
+                            {
+                                first_2_weeks: [
+                                    'Avoid strong sunlight, sunbeds, any other exposure to UV, saunas or steam rooms.',
+                                    'Avoid extreme cold; this includes ice packs that are directly applied to the skin',
+                                    'If you experience any lumpiness in the treated area it can be gently massaged to help smooth this out',
+                                    'Avoid any facial massages or skin resurfacing until the area has healed fully. It takes about 2 weeks for hyaluronic acid based dermal fillers to integrate fully within the skin.'
+                                ]
+                            }
                         ],
-                        beforeAdvices: [
-                            'To help avoid bruising it is advisable not to take aspirin or anti-inflammatory medicines (unless being prescribed by a doctor) for one week prior to injection.'
-                        ],
-                        afterAdvices: [
-                            'Immediate care - for at least 4 hours after treatment you must remain upright and do not bend excessively',
-                            'Up to 12 hours you must avoid alcohol and wearing of make-up',
-                            'For 2 days do not rub or massage the treated area and gently pat skin dry with a soft towel after washing',
-                            'For 2 weeks after treatment avoid strong sunlight and saunas, do not have facials'
-                        ],
-                        sideEffects: [
-                            'Most side effects are associated with the injection (redness, stinging sensation, rarely bruising) and will be very short lived maybe only hours. Some people may experience a mild headache for a few days following treatment yet this will be easily treatable.'
-                        ],
-                        procedureSteps: [
-                            'Full medical and facial assessment and pre-photos taken',
-                            'Skin disinfected and injection points marked with a marking pencil',
-                            'Tiny disposable insulin needles used to inject into the targeted muscles'
-                        ],
+                        side_effects: 'Most side effects are associated with the injection (redness, stinging sensation, sensitivity to touch, swelling, rarely bruising) and will be very short lived and temporary.',
+                        recommended_frequency: 'Depending on the facial area a top up treatment to maintain results is usually required between 4 to 9 months.',
+                        price: 'Starting from £130 per 1ml depending on the brand, type of a filler and amount used.'
                     }
                 }
             ]
