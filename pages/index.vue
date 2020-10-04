@@ -3,9 +3,20 @@
 
     <aside class="container-fluid hero-banner">
       <div class="container">
-        <a class="cta-container" href="#">
-          <BookingButton />
-        </a>
+        <div class="cta-container">
+          <div class="cta-header">
+            <h3>VIP AESTHETIC MEDICINE</h3>
+          </div>
+          <div class="cta-buttons-wrapper">
+            <a href="tel:0800-800-800">
+              <button class="btn my-2 my-sm-0" type="button">0800-800-800</button>
+            </a>
+            <div class="gutter"></div>
+            <a href="#">
+              <button class="btn my-2 my-sm-0" type="button">Book Your Consultation</button>
+            </a>
+            </div>
+        </div>
       </div>
     </aside>
     
@@ -15,6 +26,11 @@
         <div class="section-text">VIP AESTHETIC MEDICINE is a private Aesthetic Medicine practice 2 minutes’ drive from the Royal Bolton Hospital led by fully registered, insured and experienced Healthcare professional (BSc Hons MBPsS) who has been trained by doctors and nurses in Aesthetic Medicine and by cosmetologists in Beauty & Holistic treatments.</div>
         <div class="section-text">We offer minimally invasive non-surgical anti-aging procedures as well as non-invasive beauty and holistic treatments to help people restore a revitalized and healthy appearance and enhance their self-confidence. We pride ourselves in using the latest technology and scientific innovation available to help you get the results you deserve without having to endure extensive pain or the risks of general anesthesia, scalpels, sutures, or scars. We believe in applying all technology available to yield the greatest results with minimizing risk to all clients.</div>
       </section>
+
+      <div class="paralax-wrapper">
+        <img src="" alt="" />
+      </div>
+
       <section id="offers">
         <div class="container section-text">
           The presentation and visual image counts in a modern society. As social beings, we are permanently under scrutiny and scrutinising others. The impression we give, at least at first contact, is a combination of our way of communicating, our attitude, but mainly our visual presence. Here at VIP AESTHETIC MEDICINE we would like to help you achieve your goals whether they are aesthetic enhancements, slowing down skin aging process, stress reduction or relaxation. We offer a wide selection of beauty, aesthetic and holistic services such as:
@@ -93,17 +109,7 @@
   </div>
 </template>
 
-<script>
-import BookingButton from '@/components/utilities/BookingButton.vue'
-
-export default {
-  components: {
-    BookingButton
-  }
-}
-</script>
-
-<style lang="scss">
+<style lang="scss" scoped>
 .hero-banner {
   background: url("~assets/images/hero.webp") no-repeat center center;
   background-size: cover;
@@ -113,10 +119,33 @@ export default {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    .btn-danger {
-      background-color: $colour-primary;
-        &:hover, &:active, &:focus {
-          background-color: $colour-primary-darker;
+    .cta-container {
+      max-width: 31rem;
+      .cta-header {
+        text-align: center;
+      }
+      .cta-buttons-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        a {
+          flex: 1;
+          button {
+            width: 100%;
+            background-color: transparent;
+            border: 1px solid $colour-secondary;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            line-height: 110%;
+            letter-spacing: 1.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+          }
+        }
       }
     }
   }
@@ -143,7 +172,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 30rem;
+    min-height: 35rem;
   }
   .offer-wrapper.right {
     background-color: $colour-background;
@@ -163,6 +192,9 @@ section {
       height: 20rem;
       width: auto;
     }
+  }
+  .offer-details-column h3 {
+    border-bottom: 1px solid $colour-secondary;
   }
 }
 

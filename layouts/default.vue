@@ -69,7 +69,6 @@ a {
 .btn {
     border-radius: unset;
     padding: .75rem 1.25rem;
-    @include flex-elm;
     font-family: $font-family-accent;
 }
 
